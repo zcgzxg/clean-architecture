@@ -27,8 +27,10 @@ jobs:
         run: |
           gitbook build . ./docs
 
-      - name: Deploy GitBook
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v8
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          author_name: zcgzxg
+          author_email: 1134495285@qq.com
+          message: 'generate book'
+          add: 'docs'

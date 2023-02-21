@@ -1,0 +1,39 @@
+name: Publish GitBook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 8
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Install GitBook
+        run: |
+          npm install -g gitbook-cli
+          gitbook fetch
+
+      - name: Build GitBook
+        run: |
+          gitbook build . ./docs
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v8
+        with:
+          author_name: zcgzxg
+          author_email: 1134495285@qq.com
+          message: 'generate book'
+          add: 'docs'
+          push: origin  main:docs --set-upstream --force

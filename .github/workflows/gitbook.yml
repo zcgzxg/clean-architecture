@@ -17,6 +17,9 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Install GitBook
         run: |
@@ -32,6 +35,7 @@ jobs:
         with:
           author_name: zcgzxg
           author_email: 1134495285@qq.com
-          new_branch: docs
           message: 'generate book'
           add: 'docs'
+          new_branch: docs
+          push: origin docs --set-upstream --force

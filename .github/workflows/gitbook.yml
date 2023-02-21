@@ -32,5 +32,6 @@ jobs:
         with:
           author_name: zcgzxg
           author_email: 1134495285@qq.com
+          new_branch: docs
           message: 'generate book'
           add: 'docs'

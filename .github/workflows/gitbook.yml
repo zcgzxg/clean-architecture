@@ -1,0 +1,34 @@
+name: Publish GitBook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '8.x'
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install GitBook
+      run: |
+        npm install -g gitbook-cli
+        gitbook fetch
+
+    - name: Build GitBook
+      run: |
+        gitbook build . ./docs
+
+    - name: Deploy GitBook
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs

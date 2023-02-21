@@ -36,5 +36,4 @@ jobs:
           author_email: 1134495285@qq.com
           message: 'generate book'
           add: 'docs'
-          new_branch: docs
-          push: origin docs --set-upstream --force
+          push: origin  main:docs --set-upstream --force

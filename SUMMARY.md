@@ -3,7 +3,7 @@
 * 第一部分 Introduction
   * [第1章 什么是设计和架构](chapter-1/summary.md)
     * [目标是什么](chapter-1/Goals.md)
-    * [案例研究](chapter-1/Case%20Study.md)
+    * [案例研究](chapter-1/Case Study.md)
     * [结论](chapter-1/Conclusion.md)
 
 * 第三部分 设计原则

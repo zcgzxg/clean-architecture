@@ -41,7 +41,7 @@
 
 ![图8.2](./static/8.2.png)
 
-带有<I>标记的类是接口；带有<DS>标记的类是数据结构。开放式箭头表示使用关系。实线箭头表示实现或继承关系。
+带有`<I>`标记的类是接口；带有`<DS>`标记的类是数据结构。开放式箭头表示使用关系。实线箭头表示实现或继承关系。
 
 第一件要注意的是，所有的依赖都是源代码依赖关系。从类A指向类B的箭头意味着类A的源代码提到了类B的名称，但类B对类A一无所知。因此，在图8.2中，FinancialDataMapper通过实现关系了解了FinancialDataGateway，但FinancialGateway对FinancialDataMapper一无所知。
 
@@ -56,16 +56,6 @@
 我们希望保护Controller免受Presenters更改的影响。我们希望保护Presenters免受Views更改的影响。我们希望保护Interactor免受任何更改的影响。
 
 Interactor处于最符合OCP的位置。对数据库、Controller、Presenters或Views的更改对Interactor没有影响。
-
-为什么Interactor具有如此特殊的地位？因为它包含业务规则。Interactor包含应用程序的最高级策略。所有其他组件都处理外围问题。Interactor处理中心问题。
-
-尽管Controller对于Interactor来说是外围问题，但它对于Presenters和Views来说仍然是核心问题。虽然Presenters对于Controller来说可能是外围问题，但对于Views来说却是核心问题。
-
-注意，这样创建了一个基于“级别”概念的保护层次结构。Interactors是最高级别的概念，因此它们受到最大的保护。Views是最低级别的概念之一，因此它们受到最小的保护。Presenters比Views高级，但比Controller或Interactor低级。
-
-这就是OCP在架构层面上的工作方式。架构师根据功能如何、为什么以及何时发生变化来分离功能，然后将分离的功能组织成组件层次结构。在该层次结构中较高级别的组件受到对较低级别组件所做更改的保护。
-
-Interactor处于符合开闭原则（OCP）的最佳位置。对于数据库、控制器、展示器或视图的更改不会影响Interactor。
 
 为什么Interactor会拥有这样特权的位置？因为它包含业务规则。Interactor包含应用程序的最高级别策略。所有其他组件都在处理外围问题。Interactor处理的是核心问题。
 
@@ -83,7 +73,7 @@ Interactor处于符合开闭原则（OCP）的最佳位置。对于数据库、�
 
 FinancialReportRequester接口具有不同的用途。它的存在是为了保护FinancialReportController不过度了解Interactor的内部。如果没有该接口，则控制器会对FinancialEntities产生传递依赖。
 
-传递依赖是违反软件实体不应依赖它们不直接使用的一般原则的。当我们谈论接口隔离原则和共同重用原则时，我们将再次遇到这个原则。
+传递依赖关系违反了软件实体不应该依赖于它们不直接使用的东西的一般原则。当我们谈论接口隔离原则和共同重用原则时，我们将再次遇到这个原则。
 
 因此，即使我们的第一优先级是保护Interactor免受对Controller的更改，我们也希望通过隐藏Interactor的内部来保护Controller免受Interactor的更改影响。
 

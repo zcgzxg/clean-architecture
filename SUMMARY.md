@@ -7,6 +7,12 @@
     * [结论](chapter-1/Conclusion.md)
 
 * 第三部分 设计原则
+  * [introcuction](./part3.md)
+  * [第7章 SRP](./chapter-7/SRP.md)
+  * [第8章 OCP](./chapter-8/OCP.md)
+  * [第9章 LSP](./chapter-9/LSP.md)
+  * [第10章 ISP](./chapter-10/ISP.md)
+  * [第11章 DIP](./chapter-11/DIP.md)
 
 * 第四部分 组件原则
 

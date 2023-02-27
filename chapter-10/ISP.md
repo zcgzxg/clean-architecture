@@ -1,9 +1,4 @@
 
-- [ISP 接口隔离原则 (Interface Segregation Principle)](#isp-接口隔离原则-interface-segregation-principle)
-  - [ISP和语言](#isp和语言)
-  - [ISP和架构](#isp和架构)
-  - [结论](#结论)
-
 # ISP 接口隔离原则 (Interface Segregation Principle)
 
 接口隔离原则（ISP）得名于图10.1中的图示。

@@ -1,10 +1,3 @@
-- [SRP 单一职责原则 (Single Responsibility Principle)](#srp-单一职责原则-single-responsibility-principle)
-  - [症状 1：意外重复](#症状-1意外重复)
-  - [症状 2：合并](#症状-2合并)
-  - [解决方案](#解决方案)
-  - [结论](#结论)
-
-
 # SRP 单一职责原则 (Single Responsibility Principle)
 
 在所有的 SOLID 原则中，单一职责原则（SRP）可能是最难理解的一个。这很可能是因为它有一个特别不合适的名字。程序员很容易听到这个名字，然后假设它意味着每个模块应该只做一件事情。

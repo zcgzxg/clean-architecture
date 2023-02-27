@@ -1,7 +1,3 @@
-- [稳定依赖原则 SDP(STABLE DEPENDENCIES PRINCIPLE)](#稳定依赖原则-sdpstable-dependencies-principle)
-  - [稳定性](#稳定性)
-  - [并非所有的组件都应该是稳定的](#并非所有的组件都应该是稳定的)
-  - [抽象组件](#抽象组件)
 
 ## 稳定依赖原则 SDP(STABLE DEPENDENCIES PRINCIPLE)
 

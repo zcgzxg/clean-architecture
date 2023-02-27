@@ -1,2 +1,3 @@
-# 《Clean Architecture》 中文版
+# 《Clean Architecture》
 
+![cover](cover.png)

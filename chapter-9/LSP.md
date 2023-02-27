@@ -1,9 +1,4 @@
 
-- [LSP 里式替换原则 (Liskov Substitution Principle)](#lsp-里式替换原则-liskov-substitution-principle)
-  - [LSP和架构](#lsp和架构)
-  - [违反LSP的示例](#违反lsp的示例)
-  - [结论](#结论)
-
 # LSP 里式替换原则 (Liskov Substitution Principle)
 
 1988年，Barbara Liskov写了以下内容作为定义子类型的一种方式。

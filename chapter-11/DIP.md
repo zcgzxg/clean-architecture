@@ -1,8 +1,3 @@
-- [DIP 依赖反转原则 (Dependency Inversion Principle)](#dip-依赖反转原则-dependency-inversion-principle)
-  - [稳定的抽象](#稳定的抽象)
-  - [工厂模式](#工厂模式)
-  - [具体组件](#具体组件)
-
 
 # DIP 依赖反转原则 (Dependency Inversion Principle)
 
@@ -45,6 +40,7 @@
 但是，应用程序必须以某种方式创建ConcreteImpl的实例。为了在不创建对ConcreteImpl的源代码依赖的情况下实现这一点，应用程序调用ServiceFactory接口的makeSvc方法。该方法由ServiceFactoryImpl类实现，该类派生自ServiceFactory。该实现实例化ConcreteImpl并将其作为服务返回。
 
 图11.1使用抽象工厂模式管理依赖关系的用法
+
 ![图11.1使用抽象工厂模式管理依赖关系的用法](./static/11.1.png)
 
 图11.1中的弯曲线是一个架构边界。它将抽象与具体分开。所有源代码依赖关系都穿过该弯曲线，指向抽象的一侧。弯曲线将系统分为两个组件：一个抽象组件和另一个具体组件。抽象组件包含应用程序的所有高级业务规则。具体组件包含这些业务规则操作的所有实现细节。请注意，控制流穿过弯曲线的方向与源代码依赖关系相反。源代码依赖关系反转了控制流-这就是我们将这个原则称为“依赖反转”的原因。

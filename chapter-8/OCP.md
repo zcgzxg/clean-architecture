@@ -1,10 +1,3 @@
-- [OCP 开-闭原则 (Open-Closed Principle)](#ocp-开-闭原则-open-closed-principle)
-  - [一个思维实验](#一个思维实验)
-  - [方向控制](#方向控制)
-  - [信息隐藏](#信息隐藏)
-  - [结论](#结论)
-
-
 # OCP 开-闭原则 (Open-Closed Principle)
 
 开闭原则（OCP）是由Bertrand Meyer于1988年提出的。它的意思是：

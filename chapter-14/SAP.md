@@ -1,12 +1,3 @@
-- [稳定抽象原则 SAP(Stable Abstractions Principle)](#稳定抽象原则-sapstable-abstractions-principle)
-  - [高层策略应该放在哪里？](#高层策略应该放在哪里)
-  - [介绍稳定的抽象原则](#介绍稳定的抽象原则)
-  - [衡量抽象程度](#衡量抽象程度)
-  - [主序列](#主序列)
-  - [痛苦区](#痛苦区)
-  - [无用区](#无用区)
-  - [避免排除区域](#避免排除区域)
-  - [距离主序列的距离](#距离主序列的距离)
 
 ## 稳定抽象原则 SAP(Stable Abstractions Principle)
 

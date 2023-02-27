@@ -1,7 +1,3 @@
-- [非循环依赖原则 ADP(ACYCLIC DEPENDENCIES PRINCIPLE)](#非循环依赖原则-adpacyclic-dependencies-principle)
-  - [消除依赖循环](#消除依赖循环)
-  - [组件依赖图中的循环效应](#组件依赖图中的循环效应)
-  - [打破循环](#打破循环)
 
 ## 非循环依赖原则 ADP(ACYCLIC DEPENDENCIES PRINCIPLE)
 

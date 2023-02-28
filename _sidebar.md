@@ -26,5 +26,8 @@
     * [稳定依赖原则 SDP](chapter-14/SDP.md)
     * [稳定抽象原则 SAP](chapter-14/SAP.md)
     * [结论](chapter-14/Conclusion.md)
-    
+
+* 第五部分
+  * [第15章 架构是什么](chapter-15/架构是什么？.md)  
+  * [第16章 独立性](chapter-16/独立性.md)
 
